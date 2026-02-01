@@ -1,0 +1,306 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>For Aanchal ❤️</title>
+
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f8d7e3;
+        font-family: Arial, sans-serif;
+        overflow: hidden;
+    }
+
+    .card {
+        background: white;
+        padding: 40px;
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        position: relative;
+        width: 400px;
+        z-index: 2;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .buttons {
+        position: relative;
+        height: 100px;
+    }
+
+    button {
+        padding: 12px 25px;
+        border: none;
+        border-radius: 30px;
+        font-size: 18px;
+        cursor: pointer;
+        position: absolute;
+        transition: 0.2s;
+    }
+
+    #yesBtn {
+        background: #ff2e63;
+        color: white;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #noBtn {
+        background: #ddd;
+        left: 30px;
+        top: 50px;
+    }
+
+    /* Floating hearts */
+    .heart {
+        position: fixed;
+        bottom: -20px;
+        animation: floatUp 4s linear forwards;
+        z-index: 1;
+    }
+
+    @keyframes floatUp {
+        to {
+            transform: translateY(-110vh) scale(1.6);
+            opacity: 0;
+        }
+    }
+
+    /* Love message */
+    .loveText {
+        position: fixed;
+        top: 40%;
+        width: 100%;
+        text-align: center;
+        font-size: 60px;
+        font-weight: bold;
+        color: #ff2e63;
+        text-shadow: 3px 3px 10px rgba(0,0,0,0.25);
+        z-index: 3;
+    }
+</style>
+</head>
+<body>
+
+<div class="card" id="card">
+    <div style="font-size:40px;">🐱❤️</div>
+    <h1>Aanchal, will you be my Valentine?</h1>
+
+    <div class="buttons">
+        <button id="yesBtn">Yes</button>
+        <button id="noBtn">No</button>
+    </div>
+
+    <div style="font-size:12px;color:#666;">“No” seems a bit shy 😈</div>
+</div>
+
+<script>
+    const noBtn = document.getElementById("noBtn");
+    const yesBtn = document.getElementById("yesBtn");
+    const card = document.getElementById("card");
+
+    // No button runs away
+    noBtn.addEventListener("mouseover", () => {
+        const rect = card.getBoundingClientRect();
+        const maxX = rect.width - noBtn.offsetWidth;
+        const maxY = rect.height - noBtn.offsetHeight;
+
+        noBtn.style.left = Math.random() * maxX + "px";
+        noBtn.style.top = Math.random() * maxY + "px";
+    });
+
+    // Yes button clicked
+    yesBtn.addEventListener("click", () => {
+
+        card.style.display = "none";
+
+        // Show love text
+        const msg = document.createElement("div");
+        msg.className = "loveText";
+        msg.innerHTML = "I Love You Aanchal ❤️";
+        document.body.appendChild(msg);
+
+        // Floating hearts
+        setInterval(() => {
+            const heart = document.createElement("div");
+            heart.className = "heart";
+            heart.innerHTML = "💖";
+            heart.style.left = Math.random() * 100 + "vw";
+            heart.style.fontSize = (Math.random() * 30 + 20) + "px";
+            document.body.appendChild(heart);
+            setTimeout(() => heart.remove(), 4000);
+        }, 180);
+    });
+</script>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>For Aanchal ❤️</title>
+
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f8d7e3;
+        font-family: Arial, sans-serif;
+        overflow: hidden;
+    }
+
+    .card {
+        background: white;
+        padding: 40px;
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        position: relative;
+        width: 400px;
+        z-index: 2;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .buttons {
+        position: relative;
+        height: 120px;
+    }
+
+    button {
+        padding: 12px 25px;
+        border: none;
+        border-radius: 30px;
+        font-size: 18px;
+        cursor: pointer;
+        position: absolute;
+        transition: 0.2s;
+    }
+
+    #yesBtn {
+        background: #ff2e63;
+        color: white;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #noBtn {
+        background: #ddd;
+        left: 30px;
+        top: 60px;
+    }
+
+    /* Floating hearts */
+    .heart {
+        position: fixed;
+        bottom: -20px;
+        animation: floatUp 4s linear forwards;
+        z-index: 1;
+    }
+
+    @keyframes floatUp {
+        to {
+            transform: translateY(-110vh) scale(1.6);
+            opacity: 0;
+        }
+    }
+
+    /* Love message */
+    .loveText {
+        position: fixed;
+        top: 40%;
+        width: 100%;
+        text-align: center;
+        font-size: 60px;
+        font-weight: bold;
+        color: #ff2e63;
+        text-shadow: 3px 3px 10px rgba(0,0,0,0.25);
+        z-index: 3;
+        opacity: 0;
+        animation: fadeIn 1.5s forwards;
+    }
+
+    @keyframes fadeIn {
+        to { opacity: 1; }
+    }
+</style>
+</head>
+<body>
+
+<div class="card" id="card">
+    <div style="font-size:40px;">🐱❤️</div>
+    <h1>Aanchal, will you be my Valentine?</h1>
+
+    <div class="buttons">
+        <button id="yesBtn">Yes</button>
+        <button id="noBtn">No</button>
+    </div>
+
+    <div style="font-size:12px;color:#666;">“No” seems a bit shy 😈</div>
+</div>
+
+<!-- Optional background music -->
+<audio id="bgMusic" src="love.mp3"></audio>
+
+<script>
+    const noBtn = document.getElementById("noBtn");
+    const yesBtn = document.getElementById("yesBtn");
+    const card = document.getElementById("card");
+
+    // No button runs across whole screen
+    noBtn.addEventListener("mouseover", () => {
+        noBtn.style.position = "fixed";
+        noBtn.style.left = Math.random() * (window.innerWidth - noBtn.offsetWidth) + "px";
+        noBtn.style.top = Math.random() * (window.innerHeight - noBtn.offsetHeight) + "px";
+    });
+
+    // Yes button clicked
+    yesBtn.addEventListener("click", () => {
+
+        card.style.display = "none";
+
+        // Play music (if file exists)
+        const music = document.getElementById("bgMusic");
+        if (music) music.play().catch(()=>{});
+
+        // Show love text
+        const msg = document.createElement("div");
+        msg.className = "loveText";
+        msg.innerHTML = "I Love You Aanchal ❤️";
+        document.body.appendChild(msg);
+
+        // Floating hearts
+        const hearts = ["💖","💘","💝","❤️","💗"];
+
+        setInterval(() => {
+            const heart = document.createElement("div");
+            heart.className = "heart";
+            heart.innerHTML = hearts[Math.floor(Math.random() * hearts.length)];
+            heart.style.left = Math.random() * 100 + "vw";
+            heart.style.fontSize = (Math.random() * 30 + 20) + "px";
+            document.body.appendChild(heart);
+            setTimeout(() => heart.remove(), 4000);
+        }, 180);
+    });
+</script>
+
+</body>
+</html>
